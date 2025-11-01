@@ -1,0 +1,21 @@
+### Test Server Status
+GET http://localhost:5000
+
+### Register a New User
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "password": "123456"
+}
+
+### Login with the User
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "123456"
+}
